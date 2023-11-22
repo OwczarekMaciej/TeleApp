@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 import java.util.Iterator;
 
-public class TelephoneExamples {
+public class TelephoneBook {
         public static void main(String[] args) {
                 Person person1 = new Person("Michael", "Scott", new Address(new TelephoneNumber(93, "212789345"),
                                 "Main Street", "13", "New York", "12-298", "United States"));
