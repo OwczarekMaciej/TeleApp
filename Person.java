@@ -1,9 +1,10 @@
 public class Person extends TelephoneEntry {
 
+    String firstName;
     String lastName;
 
     Person(String name, String lastName, Address address) {
-        this.name = name;
+        this.firstName = name;
         this.lastName = lastName;
         this.address = address;
     }
@@ -13,8 +14,8 @@ public class Person extends TelephoneEntry {
     }
 
     public String description() {
-        return name + " " + lastName + ", " + address.street + ", " + address.city + ", "
-                + address.zipCode;
+        return firstName + " " + lastName + ", " + address.streetNum + " "+ address.street + ", " + address.city + ", "
+                + address.zipCode + ", " + address.country;
     }
 
 }

@@ -1,7 +1,9 @@
 public class Company extends TelephoneEntry {
 
+    String companyName;
+
     Company(String name, Address address) {
-        this.name = name;
+        this.companyName = name;
         this.address = address;
     }
 
@@ -10,6 +12,7 @@ public class Company extends TelephoneEntry {
     }
 
     public String description() {
-        return name + " " + address.street + ", " + address.city + ", " + address.zipCode;
+        return companyName + ", " + address.streetNum + " "+ address.street + ", " + address.city + ", "
+        + address.zipCode + ", " + address.country;
     }
 }
