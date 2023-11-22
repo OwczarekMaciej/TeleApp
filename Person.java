@@ -13,8 +13,8 @@ public class Person extends TelephoneEntry {
     }
 
     public String description() {
-        return name + " " + lastName + ", " + getAddress().street + ", " + getAddress().city + ", "
-                + getAddress().zipCode;
+        return name + " " + lastName + ", " + address.street + ", " + address.city + ", "
+                + address.zipCode;
     }
 
 }

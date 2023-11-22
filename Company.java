@@ -10,6 +10,6 @@ public class Company extends TelephoneEntry {
     }
 
     public String description() {
-        return name + " " + getAddress().street + ", " + getAddress().city + ", " + getAddress().zipCode;
+        return name + " " + address.street + ", " + address.city + ", " + address.zipCode;
     }
 }
